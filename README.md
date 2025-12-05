@@ -21,3 +21,7 @@ docker run -d -p 9092:9092 \
 confluentinc/cp-kafka:7.5.0
 ```
 - idk abt new version, it just asks some extra env vars
+
+## Latest versions
+- The older version used open source Zookeper to manage kafka, so we had to separately instsll zookeeper to manage kafka, but in the latest versions kafka image comes with kafka raft, which acts as inbuilt manager for kafka
+- So just run `docker compose up -d`
